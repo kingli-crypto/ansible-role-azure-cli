@@ -11,4 +11,4 @@
 - name: Install the application package (RedHat)
   package:
     name: "{{ azure_package_name }}"
-    state: present
+    state: latest
