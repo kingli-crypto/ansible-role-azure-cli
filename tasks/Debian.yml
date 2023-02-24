@@ -7,7 +7,7 @@
   - python-simplejson
   - aptitude
   - apt-transport-https
-  when: ansible_os_family == 'Debian'
+  when: ansible_os_family == 'Debian' and ansible_distribution_version == "16.04"
 
 - name: Import the APT repo key (Debian)
   apt_key:
